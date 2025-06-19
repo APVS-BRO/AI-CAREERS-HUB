@@ -5,7 +5,7 @@ import axios from 'axios';
 import { Button } from '@/components/ui/button';
 import { PlusIcon, SendHorizontalIcon } from 'lucide-react';
 import EmptyState from '@/app/(routes)/dashboard/_components/EmptyState';
-import ReactMarkdown from 'react-markdown'
+import Markdown from 'markdown-to-jsx';
 import { useParams,useRouter } from 'next/navigation';
 import { v4 as uuidv4 } from 'uuid'
 import logo from "@/public/logo.png";
@@ -164,9 +164,11 @@ export default function CareerAI() {
                       ))}
                     </div>
                   ) : (
-                    <ReactMarkdown className="prose prose-sm max-w-none">
-                      {msg.content}
-                    </ReactMarkdown>
+                   <div className="prose prose-sm max-w-none prose-headings:font-medium prose-p:text-gray-700">
+  <Markdown>
+    {msg.content}
+  </Markdown>
+</div>
                   )}
                   <div className={`absolute w-4 h-4 rotate-45 ${
                     msg.role === 'user' 
