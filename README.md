@@ -32,53 +32,83 @@ Built with cutting-edge web technologies, it offers a fast, interactive, and res
 
 ---
 
+Here’s your project documentation in a clean, professional format that will look neat in a README or docs page:
+
+---
+
 ## 📂 Project Structure
 
+```
 AI-CAREERS-HUB/
-├── app/ # Next.js App Router pages & API routes
-├── components/ui/ # Reusable UI components
-├── configs/ # App configuration files
-├── context/ # React context providers
-├── hooks/ # Custom React hooks
-├── inngest/ # Inngest background job definitions
-├── lib/ # Utility functions & helpers
-├── public/ # Static assets (images, icons, etc.)
-├── drizzle.config.ts # Drizzle ORM configuration
-├── sentry.*.ts # Sentry monitoring configuration
-├── middleware.tsx # App middleware logic
-└── tailwind.config.ts # Tailwind CSS configuration
-
-
+├── app/                # Next.js App Router pages & API routes
+├── components/ui/      # Reusable UI components
+├── configs/            # App configuration files
+├── context/            # React context providers
+├── hooks/              # Custom React hooks
+├── inngest/            # Inngest background job definitions
+├── lib/                # Utility functions & helpers
+├── public/             # Static assets (images, icons, etc.)
+├── drizzle.config.ts   # Drizzle ORM configuration
+├── sentry.*.ts         # Sentry monitoring configuration
+├── middleware.tsx      # App middleware logic
+└── tailwind.config.ts  # Tailwind CSS configuration
+```
 
 ---
 
 ## ⚙️ Installation & Setup
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/APVS-BRO/AI-CAREERS-HUB.git
-   cd AI-CAREERS-HUB
-   
-2. **Install dependencies
-  npm install
-  or
-  pnpm install
+### 1️⃣ Clone the Repository
 
-3. **.env.local file
-   DATABASE_URL=your_database_url
-   NEXT_PUBLIC_SENTRY_DSN=your_sentry_dsn
-   INNGEST_API_KEY=your_inngest_api_key
+```bash
+git clone https://github.com/APVS-BRO/AI-CAREERS-HUB.git
+cd AI-CAREERS-HUB
+```
 
-4. **Run the development server
-  npm run dev
-  Visit http://localhost:3000 to view the app.
+### 2️⃣ Install Dependencies
 
-5. **Build for production
-  npm run build
-  npm start
+```bash
+# Using npm
+npm install
 
-6. **Deployment
-Optimized for Vercel:
+# OR using pnpm
+pnpm install
+```
+
+### 3️⃣ Configure Environment Variables
+
+Create a `.env.local` file in the root directory and add the following:
+
+```env
+DATABASE_URL=your_database_url
+NEXT_PUBLIC_SENTRY_DSN=your_sentry_dsn
+INNGEST_API_KEY=your_inngest_api_key
+```
+
+### 4️⃣ Run the Development Server
+
+```bash
+npm run dev
+```
+
+Visit **[http://localhost:3000](http://localhost:3000)** to view the app.
+
+### 5️⃣ Build for Production
+
+```bash
+npm run build
+npm start
+```
+
+---
+
+## 🚀 Deployment
+
+* **Optimized for [Vercel](https://vercel.com/)**
+  Deploy directly by running:
+
+```bash
 vercel
+```
 
-
+---
